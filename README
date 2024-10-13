@@ -1,0 +1,5 @@
+¿Cómo correr el Doc Assitant desde la terminal?
+
+```bash
+    streamlit run main.py
+```

@@ -3,3 +3,11 @@
 ```bash
     streamlit run main.py
 ```
+
+Posibles preguntas al bot de documentación sobre React JS
+
+What is a component in React?
+What is a hook in React?
+From which version of React we can start using hooks?
+What are the rules to use hooks?
+What is the Virtual DOM in the context of React?

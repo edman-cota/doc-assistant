@@ -2,8 +2,7 @@ from backend.core import run_llm
 import streamlit as st
 from streamlit_chat import message
 
-st.header("LangChain - Documentation Helper Bot")
-
+st.header("React JS - Documentation Helper Bot")
 prompt = st.text_input("Prompt", placeholder="Enter your prompt here...")
 
 if(
@@ -41,7 +40,7 @@ if prompt:
         st.session_state["user_prompt_history"].append(prompt)
         st.session_state["chat_answers_history"].append(formatted_response)
         st.session_state["chat_history"].append(("human", prompt))
-        st.session_state["chat_history"].append(("ai", generated_response))
+        st.session_state["chat_history"].append(("ai", generated_response['result']))
 
 if st.session_state["chat_answers_history"]:
     for generated_response, user_query in zip(st.session_state["chat_answers_history"], st.session_state["user_prompt_history"]):

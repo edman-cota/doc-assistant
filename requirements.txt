@@ -20,3 +20,4 @@ altair<5
 streamlit
 streamlit-chat
 langchain_pinecone
+firecrawl-py
